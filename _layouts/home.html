@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> {{ site.title }}</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112428799-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-112428799-1');
+        </script>
+            <!-- Meta go here -->
+            <!-- Scripts go here -->
+    </head>
+    <header>
+        <!-- Header go here -->
+    </header>
+    <body>
+        <!-- Body go here -->
+    </body>
+    <footer>
+        <!-- Footer go here -->
+    </footer>
+    <script type="text/javascript">
+        echo.init({
+          offset: 100,
+          throttle: 250,
+          unload: false,
+          callback: function (element, op) {
+            console.log(element, 'has been', op + 'ed')
+          }
+        });
+      </script>
+      <!-- build:js -->
+      <!-- <script src="assets/js/main.js"></script> -->
+      <!-- endbuild -->
+</html>

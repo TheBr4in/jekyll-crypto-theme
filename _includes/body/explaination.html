@@ -1,0 +1,182 @@
+<div class="section-3">
+  <div class="container">
+      <p class="paragraph-3">UNDER THE SHELL</p>
+      <h2 class="section-heading">The Demo Protocol</h2>
+      <div class="protocol-content">
+          <div class="row middle">
+              <div class="col-lg-3 d-lg-block protocol-hidden protocol-bg pr-0">
+                  <ul class="protocol-title">
+                      <li><button class="tablink title-blue" onclick="openCity(event, 'StorageUser')">Storage User</button></li>
+                      <li><button class="tablink" onclick="openCity(event, 'BrokerNode')">Broker Node</button></li>
+                      <li><button class="tablink" onclick="openCity(event, 'WebNode')">Web Node</button></li>
+                      <li><button class="tablink" onclick="openCity(event, 'WebsiteOwner')">Website Owner</button></li>
+                      <li><button class="tablink" onclick="openCity(event, 'Tangle')">Tangle</button></li>
+                      <li><button class="tablink" onclick="openCity(event, 'Blockchain')">Blockchain</button></li>
+                  </ul>
+              </div>
+              <div class="col-lg-9">
+                  <div id="StorageUser" class="city" style="display:block">
+                      <div class="main-content">
+                          <h1 class="heading-4">Storage User</h1>
+                          <p>A user that spends Demo Pearls to upload a file</p>
+                          <div>
+                              <p>Responsibilities</p>
+                              <ul>
+                                  <li>Pay the correct amount of Demo Pearls to two Broker Nodes.</li>
+                                  <li>Despite automation, has final discretion in choosing which two Broker Nodes to use.</li>
+                                  <li>Encrypt and split file locally in browser before sending parts to chosen Broker Nodes.</li>
+                                  <li>Verify the integrity of the Data Map installed by Broker Nodes.</li>
+                                  <li>Share Broker Node contracts via the Distributed Reputation System.</li>
+                                  <li>Securely store the Demo Handle to retrieve the file from the Tangle at a later time.</li>
+                              </ul>
+                          </div>
+                          <div>
+                              <p>Reward</p>
+                              <ul>
+                                  <li>Their file is securely, reliably, and anonymously stored.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="BrokerNode" class="city" style="display:none">
+                      <div class="main-content">
+                          <h1 class="heading-4">Broker Node</h1>
+                          <p>A network device with access to the Tangle and Blockchain</p>
+                          <div>
+                              <p>Responsibilities</p>
+                              <ul>     
+                                  <li>Maintain connectivity to the Tangle via mutual neighboring Nodes.</li>
+                                  <li>Provide Web Nodes and Storage Users with access to the Tangle.</li>
+                                  <li>Perform Proof of Work for new file uploads where applicable.</li>
+                                  <li>Submit the Storage User's Pearls to a buried state in the Demo Contract.</li>
+                                  <li>Unlock discovered treasure if it's Proof of Work was performed.</li>
+                                  <li>Maintain a positive balance of ETH to unlock discovered treasure.</li>
+                                  <li>Build a reputation score on the Distributed Reputation System.</li>
+                                  <li>Broker peer-to-peer connection initiations between Web Nodes.</li>
+                                  <li>Send new Treasure Maps to Web Nodes that perform Proof of Work.</li>
+                              </ul>
+                          </div>
+                          <div>
+                              <p>Reward</p>
+                              <ul>
+                                  <li>Earn Demo Pearls by collecting leftovers from newly buried treasure.</li>
+                                  <li>Earn Demo Pearls by collecting fees from newly discovered treasure.</li>
+                              </ul>
+                          </div>
+                      </div> 
+                  </div>
+                  <div id="WebNode" class="city" style="display:none">
+                      <div class="main-content">
+                          <h1 class="heading-4">Web Node</h1>
+                          <p>A web browser that is visiting a website</p>
+                          <div>
+                              <p>Responsibilities</p>
+                              <ul>
+                                  <li>Search through Treasure Maps via Proof of Work to discover embedded Demo Pearls.</li>
+                                  <li>Submit discovered Treasure to a Broker Node for claiming on behalf of the corresponding Website Owner.</li>
+                                  <li>Perform Proof of Work for Broker Nodes to get Web Node identities and new Treasure Maps.</li>
+                                  <li>Perform Proof of Work for Web Nodes to get Web Node identities and old Treasure Maps.</li>
+                                  <li>Send Web Node identities and old Treasure Maps to Web Nodes that have performed the adequate Proof of Work.</li>
+                                  <li>Share Broker Node contracts via the Distributed Reputation System.</li>
+                              </ul>
+                          </div>
+                          <div>
+                              <p>Reward</p>
+                              <ul>
+                                  <li>Granted access to content/goods/services from the Website Owner.</li>
+                                  <li>Pass on Proof of Work burden to other Web Nodes where applicable.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="WebsiteOwner" class="city" style="display:none">
+                      <div class="main-content">
+                          <h1 class="heading-4">Website Owner</h1>
+                          <p>An organization or individual that runs a website</p>
+                          <div>
+                              <p>Responsibilities</p>
+                              <ul>
+                                  <li>Provide content/goods/services to Web Nodes.</li>
+                                  <li>Add the Demo Protocol script to their website HTML.</li>
+                              </ul>
+                          </div>
+                          <div>
+                              <p>Reward</p>
+                              <ul>
+                                  <li>Get paid in Demo Pearls that have been discovered by Web Nodes.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="Tangle" class="city" style="display:none">
+                      <div class="main-content">
+                          <h1 class="heading-4">Tangle</h1>
+                          <p>A distributed ledger known as a Directed Acyclic Graph</p>
+                          <div>
+                              <p>Responsibilities</p>
+                              <ul>
+                                  <li>Retain data for which the Proof of Work has been performed.</li>
+                                  <li>Geographically distribute redundant copies of data.</li>
+                                  <li>Load balance storage burden, such as with Swarm Intelligence.</li>
+                              </ul>
+                          </div>
+                          <div>
+                              <p>Reward</p>
+                              <ul>
+                                  <li>Network experiences increased resistance against attack vectors.</li>
+                                  <li>Faster average confirmation time for transactions.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="Blockchain" class="city" style="display:none">
+                      <div class="main-content">
+                          <h1 class="heading-4">Blockchain</h1>
+                          <p>A distributed ledger with Smart Contract capabilities</p>
+                          <div>
+                              <p>Responsibilities</p>
+                              <ul>
+                                  <li>Provide Smart Contract Framework that produces the properties inherent in Demo Pearls (as tokens).</li>
+                              </ul>
+                          </div>
+                          <div>
+                              <p>Reward</p>
+                              <ul>
+                                  <li>Blockchain miners receive fees paid in ETH from the Broker Nodes.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <script>
+                  function openCity(evt, cityName) {
+                      var i, x, tablinks;
+                      x = document.getElementsByClassName("city");
+                      for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";
+                      }
+                      tablinks = document.getElementsByClassName("tablink");
+                      for (i = 0; i < x.length; i++) {
+                          tablinks[i].className = tablinks[i].className.replace(" title-blue", ""); 
+                      }
+                      document.getElementById(cityName).style.display = "block";
+                      evt.currentTarget.className += " title-blue";
+                  }
+              </script>
+          </div>
+      </div>
+      <div class="protocol_action">
+          <div class="row middle">
+              <div class="col-lg-4">
+                  <a target="_blank" href="https://t.me/oysterprotocol" class="btn btn-lg whitepaper">Join the Discussion</a>
+              </div>
+              <div class="col-lg-4">
+                  <a target="_blank" href="https://oyster.ws/OysterWhitepaper.pdf" class="btn btn-lg whitepaper">Read the Whitepaper</a>
+              </div>
+              <div class="col-lg-4">
+                  <a target="_blank" href="https://trello.com/oysterprotocol" class="btn btn-lg whitepaper">Track Team Progress</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
