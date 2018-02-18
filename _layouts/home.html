@@ -13,16 +13,28 @@ layout: default
             gtag('config', 'UA-112428799-1');
         </script>
             <!-- Meta go here -->
+        {% include meta.html %}
             <!-- Scripts go here -->
+        {% include scripts.html %}
     </head>
     <header>
         <!-- Header go here -->
+        {% include header/nav.html %}
+        {% include header/banner.html %}
+        {% include header/partners.html %}
     </header>
     <body>
         <!-- Body go here -->
+        {% include body/solution.html %}
+        {% include body/principles.html %}
+        {% include body/explaination.html %}
+        {% include body/values.html %}
+        {% include body/team.html %}
+        {% include body/token.html %}
     </body>
     <footer>
         <!-- Footer go here -->
+        {% include footer.html %}
     </footer>
     <script type="text/javascript">
         echo.init({
